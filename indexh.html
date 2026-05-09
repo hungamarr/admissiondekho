@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Admission Form</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.container{
+    width:100%;
+    max-width:500px;
+    background:#fff;
+    border-radius:15px;
+    padding:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:10px;
+    color:#0f172a;
+}
+
+.contact{
+    text-align:center;
+    margin-bottom:25px;
+    color:#444;
+    line-height:28px;
+}
+
+.contact a{
+    color:#2563eb;
+    text-decoration:none;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+input, select{
+    padding:14px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+    outline:none;
+}
+
+input:focus, select:focus{
+    border-color:#2563eb;
+}
+
+button{
+    padding:14px;
+    background:#2563eb;
+    color:#fff;
+    border:none;
+    border-radius:8px;
+    font-size:18px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+.success{
+    text-align:center;
+    color:green;
+    margin-top:15px;
+    display:none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Admission Apply Form</h1>
+
+    <div class="contact">
+        📧 Email: hungamarr01@gmail.com <br>
+        📞 Contact: 7838587957 /  88515 91047 /  78275 40806 /  79821 16565
+    </div>
+
+    <!-- FORM -->
+    <form action="https://formsubmit.co/el/zumadu" method="POST">
+
+        <input type="text" name="Name" placeholder="Enter Your Name" required>
+
+        <input type="tel" name="Phone Number" placeholder="Enter Phone Number" required>
+
+        <input type="email" name="Email" placeholder="Enter Email Address" required>
+
+        <select name="Course Interest" required>
+            <option >Select Course</option>
+            <option>BCA</option>
+            <option>BBA</option>
+            <option>B.Tech</option>
+            <option >BSC</option>
+            <option >BA</option>
+            <option >BCOM</option>
+            <option >LLB</option>
+            <option >MBBS</option>
+            <option>MBA</option>
+            <option>MCA</option>
+        </select>
+
+        <input type="text" name="College" placeholder="Interested College Name" required>
+
+        <!-- Hidden Settings -->
+        <input type="hidden" name="_captcha" value="false">
+
+        <button type="submit">Submit Form</button>
+
+    </form>
+
+</div>
+
+<script>
+console.log("Admission Form Loaded Successfully");
+</script>
+
+</body>
+</html>
